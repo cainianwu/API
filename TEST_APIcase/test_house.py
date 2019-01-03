@@ -38,7 +38,7 @@ class test_shou(unittest.TestCase):
         a = r.text
         test_json =json.loads(a)
         print(test_json)
-'''
+
 
 if __name__ == '__main__':
     #确定生成报告的路径
@@ -50,7 +50,7 @@ if __name__ == '__main__':
     E_emai(filenmail="aaa.html")
 
 
-'''
+
 
 
 
