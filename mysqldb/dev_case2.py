@@ -20,6 +20,9 @@ db  = pymysql.connect(host= adb.get("host"),
                     charset=adb.get("charset")
                     )
 
+
+
+
 # 使用 cursor() 方法创建一个游标对象 cursor
 cursor = db.cursor()
 sql = "SELECT %s FROM broker_info bk WHERE bk.brokerid =  95742" % "bk.bname"
@@ -28,9 +31,9 @@ cursor.execute(sql)
 
 # 使用 fetchone() 方法获取单条数据.
 data = cursor.fetchone()
-data1 = cursor.fetchall()
-print(data[0])
-print(type(data))
+data1 = str(data)
+print(data1)
+print(type(data1))
 #print("Database version : %s " % data)
 
 # 关闭数据库连接
@@ -40,5 +43,30 @@ db.close()
 
 
 tr = "asdasdaa\?asd\?asd\?asd"
-cc = tr.split("\?")[0]
-print(cc)
+cc = tr.split("\?")
+print(type(tr))
+print(type(cc))
+
+
+
+
+import string
+alphas = string.ascii_letters + '_'
+nums = string.digits
+
+print('欢迎使用标识符检查器v1.0')
+print('受试者必须至少长2个字符。')
+inp = input('要测试的标识符？ ')
+print(len(inp))
+print(inp[0])
+print(inp[1:])
+if len(inp) > 1:
+    if inp[0] not in alphas:
+        print('''无效：第一个符号必须为字母顺序的''')
+    else:
+        for otherChar in inp[1:]:
+            if otherChar not in alphas + nums:
+                print('''无效：剩余符号必须是字母数字''')
+            break
+        else:
+                print("可以作为标识符")

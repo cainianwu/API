@@ -21,8 +21,4 @@ DATABASE = {
     "charset":ty_pe.detal("stu.xls","mysqldb",1,6)
 }
 
-REDIS = {
-    "HOST": "localhost",
-    "PORT": 6379,
-    "DB": "0"
-}
+
