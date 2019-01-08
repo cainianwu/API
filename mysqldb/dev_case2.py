@@ -60,13 +60,15 @@ inp = input('要测试的标识符？ ')
 print(len(inp))
 print(inp[0])
 print(inp[1:])
-if len(inp) > 1:
+myint = len(inp)
+alphase = alphas + nums
+if myint > 1:
     if inp[0] not in alphas:
-        print('''无效：第一个符号必须为字母顺序的''')
+        print('''无效：第一个符号必须为字母或者下划线''')
     else:
         for otherChar in inp[1:]:
-            if otherChar not in alphas + nums:
-                print('''无效：剩余符号必须是字母数字''')
+            if otherChar not in alphase:
+                print('''无效：剩余符号必须是字母数字下划线''')
             break
         else:
-                print("可以作为标识符")
+            print("可以作为标识符")
