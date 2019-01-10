@@ -486,3 +486,4 @@ runner = HTMLTestRunnerCN.HTMLTestReportCN(
 # 关闭文件，否则会无法生成文件
 fp.close()
 '''
+
