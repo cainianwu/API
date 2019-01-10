@@ -25,14 +25,16 @@ db  = pymysql.connect(host= adb.get("host"),
 
 # 使用 cursor() 方法创建一个游标对象 cursor
 cursor = db.cursor()
-sql = "SELECT %s FROM broker_info bk WHERE bk.brokerid =  95742" % "bk.bname"
+sql = "SELECT * FROM test_api cs WHERE cs.id = 1"
+#sql = "SELECT %s FROM broker_info bk WHERE bk.brokerid =  95742" % "bk.bname"
 # 使用 execute()  方法执行 SQL 查询
 cursor.execute(sql)
 
 # 使用 fetchone() 方法获取单条数据.
 data = cursor.fetchone()
 data1 = str(data)
-print(data1)
+aa=data[1],data[2]
+print(aa)
 print(type(data1))
 #print("Database version : %s " % data)
 
@@ -44,8 +46,8 @@ db.close()
 
 tr = "asdasdaa\?asd\?asd\?asd"
 cc = tr.split("\?")
-print(type(tr))
-print(type(cc))
+print(tr)
+print(cc)
 
 
 
@@ -72,3 +74,10 @@ if myint > 1:
             break
         else:
             print("可以作为标识符")
+
+
+
+
+cc ="sadadasd123"
+
+print("cc.upprer:",cc.upper())
