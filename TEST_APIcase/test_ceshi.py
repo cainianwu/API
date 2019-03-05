@@ -191,7 +191,7 @@ class test_test(unittest.TestCase):
         123走不走.
         '''
         try:
-            data = A.data_data("data", "stu.xls", 2, 5)
+            data = A.data_data("data", "stu.xls", 2, 6)
             url = A.data_url("stu.xls", 2, 0, "stu.xls", 2, 1, "stu.xls", 2, 2, "stu.xls", 2, 3)
             r = A.type("post", url, data=data)
             a = r.text
