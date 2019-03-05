@@ -6,13 +6,14 @@
 @File: Wraps.py
 @License: MIT
 """
+import builtins
 import json
 from functools import wraps
-from .LogHandler import LogHandler
-from .HttpHandler import HttpHandler
-from .CreateCases import CreateCase
-from .Recursion import GetDictParam
-import builtins
+
+from API_Shared.CreateCases import CreateCase
+from API_Shared.HttpHandler import HttpHandler
+from API_Shared.LogHandler import LogHandler
+from API_Shared.Recursion import GetDictParam
 
 logger = LogHandler(__name__)
 

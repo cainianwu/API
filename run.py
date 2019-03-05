@@ -8,8 +8,8 @@
 import click
 import os
 import unittest
-from src.lib.BeautifulReport import BeautifulReport
-from src.lib import CreateCases
+from API_Shared.HTMLreport import BeautifulReport
+from API_Shared import CreateCases
 
 CreateCases.CreateCase()
 

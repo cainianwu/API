@@ -6,9 +6,11 @@
 @File: CaseManager.py
 @License: MIT
 """
-import os
 import json
-from .LogHandler import LogHandler
+import os
+
+from API_Shared.LogHandler import LogHandler
+
 CASE_PATH = 'cases/'
 
 logger = LogHandler(__name__)

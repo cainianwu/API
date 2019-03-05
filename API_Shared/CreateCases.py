@@ -6,10 +6,11 @@
 @ Project : base_test
 @ Create Time: 2017-05-19 17:26
 """
-import os
 import json
+import os
 import types
-from .LogHandler import LogHandler
+
+from API_Shared.LogHandler import LogHandler
 from ..config import config
 
 logger = LogHandler(__name__)

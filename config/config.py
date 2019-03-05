@@ -6,9 +6,10 @@
 """
 import json
 import os
-from ..lib.LogHandler import LogHandler
-from ..lib import GetDictParam, CasesManager, CasesContainer
 
+from API_Shared.Recursion import GetDictParam
+from API_Shared.CaseManager import CasesContainer,CasesManager
+from API_Shared import LogHandler
 
 __all__ = [
     "CasesContainer",

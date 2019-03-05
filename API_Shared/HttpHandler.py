@@ -7,11 +7,12 @@
 @License: MIT
 """
 import json
-import re
-from requests import Session
-from .LogHandler import LogHandler
-from .Recursion import GetDictParam
 from urllib import parse
+
+from requests import Session
+
+from API_Shared.LogHandler import LogHandler
+from API_Shared.Recursion import GetDictParam
 
 logger = LogHandler(__name__)
 SESSION = Session()
