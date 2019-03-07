@@ -7,7 +7,7 @@
 @License: MIT
 """
 import unittest
-from src.lib import CasesContainer
+from API_Shared.CaseManager import CasesContainer
 
 
 class CasesContainerCase(unittest.TestCase):

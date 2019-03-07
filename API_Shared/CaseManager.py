@@ -1,17 +1,16 @@
-"""
-@Version: 1.0
-@Project: doraemon_recode
-@Author: Raymond
-@Data: 2018/1/31 上午11:49
-@File: CaseManager.py
-@License: MIT
-"""
+#-*- coding:UTF-8 -*-
+#import sys
+#reload(sys)
+#sys.setdefaultencoding("utf8")
+# __author__ = 'wudawei'
+
+
 import json
 import os
 
 from API_Shared.LogHandler import LogHandler
 
-CASE_PATH = 'cases/'
+CASE_PATH = 'TEST_APIcase/'
 
 logger = LogHandler(__name__)
 

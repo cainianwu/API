@@ -8,7 +8,7 @@
 """
 
 import unittest
-from src.lib import CasesManager
+from API_Shared.CaseManager import CasesManager
 
 class CaseManagerCase(unittest.TestCase):
     @classmethod

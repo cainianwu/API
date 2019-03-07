@@ -1,10 +1,10 @@
-"""
-@Version: 1.0
-@Project: News
-@Author: JHao
-@Data: 2017/12/21 下午2:09
-@File: log.py
-"""
+#-*- coding:UTF-8 -*-
+#import sys
+#reload(sys)
+#sys.setdefaultencoding("utf8")
+# __author__ = 'wudawei'
+
+
 
 import logging
 import os

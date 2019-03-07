@@ -1,11 +1,10 @@
-"""
-@Version: 1.0
-@Project: doraemon_recode
-@Author: Raymond
-@Data: 2018/1/30 下午12:03
-@File: HttpHandler.py
-@License: MIT
-"""
+#-*- coding:UTF-8 -*-
+#import sys
+#reload(sys)
+#sys.setdefaultencoding("utf8")
+# __author__ = 'wudawei'
+
+
 import json
 from urllib import parse
 
