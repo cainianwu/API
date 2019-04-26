@@ -28,9 +28,6 @@ class P_data(object):
 
     def deta1(self,devdata,devdata1,devdata2):
         '''
-
-        :param :
-        :param :
         :param :
         :return:
         '''
@@ -42,10 +39,6 @@ class P_data(object):
 
     def detal(self,devdata,devdata2,devdata1,devdata3):
         '''
-
-        :param :
-        :param :
-        :param :
         :param :
         :return:
         '''

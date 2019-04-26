@@ -9,7 +9,7 @@ import time
 import os
 from API_Shared.HTMLreport import BeautifulReport
 from API_Shared.E_mail import E_emai
-test_drice = "../TEST_APIcase"
+test_drice = "../API_gather"
 
 
 file = unittest.defaultTestLoader.discover(test_drice,pattern='test*.py',top_level_dir=None)
